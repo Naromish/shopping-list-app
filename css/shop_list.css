@@ -10,6 +10,8 @@ img {
 	background-attachment: scroll;
 }
 
+
+
 .container{
 	z-index: 0;
 	background: rgb(254,255,255);	
@@ -27,6 +29,14 @@ img {
 	margin-right: 5%;
 
 }
+
+li {
+	font-size: 1.2em;
+	list-style: none;
+    line-height: 1em;
+	text-indent: .4em;
+}
+
 
 h1, h2, {
 	color: rgb(88,56,41);
@@ -82,6 +92,18 @@ h4 {
 }  
 
 footer {
+	 position: fixed;
+	 height: 10px;
+	bottom: 0px;
+	left: 0px;
+	padding: 5px;
+	margin: 0px;
+	width:100%;
+	background-color: rgb(139,115,87);
+
+}
+	 /*For option to save list when type added back in.
+
 	 font-size: 1.9em;
 	 text-align: center;
 	 background-color: rgb(139,115,87);
@@ -91,6 +113,6 @@ footer {
 	left: 0px;
 	padding: 5px;
 	margin: 0px;
-	width:100%;
+	width:100%;*/
 
-}
+

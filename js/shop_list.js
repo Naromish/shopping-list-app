@@ -11,3 +11,26 @@
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(wf, s);
   })(); </script>
+
+  $(document).ready(function() {
+
+// use enter to add list items
+	$('#new-item').keyup(function(event){
+		if(event.keyCode == 13) {
+			event.preventDefault();
+		};
+	});	
+
+//add list items
+	$('#add').click(function(){
+		var txtbox = document.getElementById('item');
+		var txtval = txtbox.value;
+		event.preventDefault();
+
+		if(!$.trim($('#new-item').val())) {
+		else {
+			$('<li class="items"></li>').appendTo('#list');
+
+		document.getElementById('item').value = '';
+		};
+	});
