@@ -4,23 +4,29 @@ $(document).ready(function(){
 	$('#add-item').keyup(function(event){
 		if(event.keyCode == 13) {
 			event.preventDefault();
-			$('#add').click();
 		};
-	});	
+});
 
 //add list items
-	$('#add').click(function(){
-		var txtbox = document.getElementById('add-item');
+	$('#add-item').click(function(){
+		var txtbox = document.getElementById('item');
 		var txtval = txtbox.value;
 		event.preventDefault();
 
-		if(!$.trim($('#item').val())) {
-			alert('Please enter text to add to the list');
+		if(!$.trim($('#add-item').val())) {
+			alert('Please enter an item');
 		} else {
-			$('<li class="items"></li>').appendTo('#add');
+			$('<li class="items"></li>').appendTo('#list').html();
 
-		document.getElementById('add-item').value = '';
+		document.getElementById('item').value = '';
 		};
 	});
 
-});
+
+//sortable list items
+	$('#add').sortable({ axis: "y" });
+
+
+
+
+	});

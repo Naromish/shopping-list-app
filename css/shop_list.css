@@ -28,7 +28,16 @@ img {
 	margin-right: 5%;
 
 }
+
 #add-item {
+	background-color: white;
+	border: none;
+	border-radius: .5px;
+	color: rgb(88,56,41);    
+    width: 200px;
+    font-size: .9em;
+	list-style: none;
+    line-height: 1em;
 
 }
 
