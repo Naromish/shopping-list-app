@@ -1,32 +1,21 @@
-$(document).ready(function(){
+function addListItem() {
+    var text = $("#add-item").val();
+    $("#add").append('<li>' + text + '</li>');
+    $("#add-item").val('');
+    $('#add-item').keydown(function(enter) {
+        if (enter.keyCode == 13) {
+            postItem();
+        }
+    });
 
-// use enter to add list items
-	$('#add-item').keyup(function(event){
-		if(event.keyCode == 13) {
-			event.preventDefault();
-		};
+};
+
+
+$(document).ready(function() {
+    $("#new").on('click', addListItem);
+    $('#add').on('dblclick', 'li', function() {
+        $(this).toggleClass('strike');
+        $(this).children().toggleClass();
+    });
+
 });
-
-//add list items
-	$('#add-item').click(function(){
-		var txtbox = document.getElementById('item');
-		var txtval = txtbox.value;
-		event.preventDefault();
-
-		if(!$.trim($('#add-item').val())) {
-			alert('Please enter an item');
-		} else {
-			$('<li class="items"></li>').appendTo('#list').html();
-
-		document.getElementById('item').value = '';
-		};
-	});
-
-
-//sortable list items
-	$('#add').sortable({ axis: "y" });
-
-
-
-
-	});

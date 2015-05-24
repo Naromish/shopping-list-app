@@ -1,127 +1,115 @@
 body {
-  	font-family: 'Walter Turncoat', cursive;
+    font-family: 'Walter Turncoat', cursive;
     background-image: url ("images/coffee_beans.jpg");
 }
+
 img {
-	min-width: 120%;
-	margin-left: -10%;
-	z-index: -1;
-	position: fixed;
-	background-attachment: scroll;
+    min-width: 120%;
+    margin-left: -10%;
+    z-index: -1;
+    position: fixed;
+    background-attachment: scroll;
 }
 
-
-.container{
-	z-index: 0;
-	background: rgb(254,255,255);	
-    background: rgba(254,255,255, 0.6);
-	margin-left: 35%;
-	margin-right: 35%;
-	margin-top: -40px;
-	margin-bottom: 80px;
-	padding-bottom: 5px;
+.container {
+    z-index: 0;
+    background: rgb(254, 255, 255);
+    background: rgba(254, 255, 255, 0.6);
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: -40px;
+    margin-bottom: 80px;
+    padding-bottom: 5px;
 }
 
 .list {
-	z-index: 1;
-	margin-left: 5%;
-	margin-right: 5%;
-
+    z-index: 1;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #add-item {
-	background-color: white;
-	border: none;
-	border-radius: .5px;
-	color: rgb(88,56,41);    
+    background-color: white;
+    border: none;
+    border-radius: .5px;
+    color: rgb(88, 56, 41);
     width: 200px;
     font-size: .9em;
-	list-style: none;
+    list-style: none;
     line-height: 1em;
-
 }
 
-#add {
+#new {}
 
-}
-
-.items {
-
-}
+.items {}
 
 li {
-	font-size: 1.2em;
-	list-style: none;
+    font-size: 1.2em;
+    list-style: none;
     line-height: 1em;
-	text-indent: .4em;
+    text-indent: .4em;
 }
 
-
-h1, h2, {
-	color: rgb(88,56,41);
-
+h1,
+h2,
+{
+    color: rgb(88, 56, 41);
 }
+
 header {
     font-size: 2.2em;
     text-align: center;
     letter-spacing: .0825em;
     position: fixed;
-	top: 0px;
-	left: 0px;
-	padding: 5px;
-	margin: 0px;
-	width:100%;
-    background-color: rgb(88,56,41);
+    top: 0px;
+    left: 0px;
+    padding: 5px;
+    margin: 0px;
+    width: 100%;
+    background-color: rgb(88, 56, 41);
     color: white;
-
 }
 
 p {
-    font-size: .8em;
+    font-size: 1em;
     text-align: center;
-    color: rgb(139,115,87);
-	padding: 10px;
-	margin: 50px;
+    color: rgb(139, 115, 87);
+    padding: 10px;
+    margin: 50px;
 }
-
 
 h1 {
     font-size: 1em;
-    background-color: rgb(230,205,174);
-    color: rgb(88,56,41);
+    background-color: rgb(230, 205, 174);
+    color: rgb(88, 56, 41);
     text-indent: .3em;
-    }
+}
 
 h2 {
     font-size: 1.2em;
-        line-height: .7em;
-
+    line-height: .7em;
     text-indent: .6em;
-    }
+}
 
-
-h4 {
-	font-size: 1.2em;
-	line-height: .7em;
-	text-decoration: line-through;
-	color: rgb(139,115,87);
-	text-indent: .6em;
-
-
-}  
+.strike {
+    font-size: 1.2em;
+    line-height: .9em;
+    text-decoration: line-through;
+    color: rgb(139, 115, 87);
+    text-indent: .5em;
+}
 
 footer {
-	 position: fixed;
-	 height: 10px;
-	bottom: 0px;
-	left: 0px;
-	padding: 5px;
-	margin: 0px;
-	width:100%;
-	background-color: rgb(139,115,87);
-
+    position: fixed;
+    height: 10px;
+    bottom: 0px;
+    left: 0px;
+    padding: 5px;
+    margin: 0px;
+    width: 100%;
+    background-color: rgb(139, 115, 87);
 }
-	 /*For option to save list when type added back in.
+/*For option to save list when type added back in.
 
 	 font-size: 1.9em;
 	 text-align: center;
@@ -133,5 +121,3 @@ footer {
 	padding: 5px;
 	margin: 0px;
 	width:100%;*/
-
-
