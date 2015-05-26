@@ -41,7 +41,13 @@ img {
 
 #new {}
 
-.items {}
+
+/*img.delete a:hover {
+    float: right;
+    margin-top: 3px;
+    display: none;
+    width: 10px;
+}*/
 
 li {
     font-size: 1.2em;
@@ -73,6 +79,8 @@ header {
 p {
     font-size: 1em;
     text-align: center;
+    text-decoration: uppercase;
+    letter-spacing: .0825em;
     color: rgb(139, 115, 87);
     padding: 10px;
     margin: 50px;
@@ -101,7 +109,7 @@ h2 {
 
 footer {
     position: fixed;
-    height: 10px;
+    height: 30px;
     bottom: 0px;
     left: 0px;
     padding: 5px;
@@ -109,15 +117,13 @@ footer {
     width: 100%;
     background-color: rgb(139, 115, 87);
 }
-/*For option to save list when type added back in.
 
-	 font-size: 1.9em;
-	 text-align: center;
-	 background-color: rgb(139,115,87);
-	 color: rgb(88,56,41);
-	position: fixed;
-	bottom: 0px;
-	left: 0px;
-	padding: 5px;
-	margin: 0px;
-	width:100%;*/
+.clear, .button {  
+     margin-bottom: 0px;
+     text-align: center;
+     font-size: 1.6em;
+
+
+}
+
+ 
