@@ -24,14 +24,27 @@ $(document).ready(function() {
 
     //the below is not working//
 
-    $('input').keydown(function(e) {
+    $('add-item').keypress(function(e) {
         if (e.keyCode == 13) {
-            return false;
+            alert('Entered');
         }
+    
+
+
+
     });
 
 
    });
+
+
+
+ 
+
+
+
+
+
 
 //want to remove ADD button and have input by ENTER key only
 //right now only the first input field works now, how do I get the rest to work?
