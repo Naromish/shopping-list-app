@@ -7,55 +7,55 @@
     <link rel="stylesheet" type="text/css" href="css/shop_list.css">
     <link href='http://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
     <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
     <script src="js/shop_list.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
 </head>
 
 <body>
-    <img src="images/coffee_beans.jpg" alt="Coffee Beans" />
+    <img class="background" src="images/coffee_beans.jpg" alt="Coffee Beans" />
     <header>My Grocery List</header>
     <p>click and drag the categories to
         change the order. <br>doubleclick an item you've added to your cart.</p>
     <div class="container">
         <div class="list">
             <h1>Produce</h1>
-            <input id="add-item" type="text" name="add-item" placeholder="Type + Enter" />            
-            <button id="new">ADD</button>
-        
-            <ul id="add">
-                <li class="items"><span>Apples</span><img class="delete" src='images/circle_x.png'></li>
-                
-
+            <input class="add-item" type="text" name="add-item" placeholder="Type + Enter" />          
+            <ul class="add">
+                <li class="items"><span>Apples</span>
+                <img class="delete" src='images/circle_x.png'/></li>
             </ul>
+
             
+            <!--
             <h1>Bakery</h1>
-            <input id="add-item" type="text" name="add-item" placeholder="Type + Enter" />
-            <button id="new">ADD</button>
-            <ul id="add">
+            <input class="add-item" type="text" name="add-item" placeholder="Type + Enter" />
+            <ul class="add">
                 <li class="items"><span>Bread</span></li>
             </ul>
+                        
+
             <h1>Deli</h1>
-            <input id="add-item" type="text" name="add-item" placeholder="Type + Enter" />
-            <button id="new">ADD</button>
+            <input class="add-item" type="text" name="add-item" placeholder="Type + Enter" />
+            
             <h1>Meat/Seafood</h1>
-            <input id="add-item" type="text" name="add-item" placeholder="Type + Enter" />
-            <button id="new">ADD</button>
+            <input class="add-item" type="text" name="add-item" placeholder="Type + Enter" />
             <h1>Pantry</h1>
-            <input id="add-item" type="text" name="add-item" placeholder="Type + Enter" />
-            <button id="new">ADD</button>
+            <input class="add-item" type="text" name="add-item" placeholder="Type + Enter" />
+            
             <h1>Dairy</h1>
-            <input id="add-item" type="text" name="add-item" placeholder="Type + Enter" />
-            <button id="new">ADD</button>
+            <input class="add-item" type="text" name="add-item" placeholder="Type + Enter" />
             <h1>Other</h1>
-            <input id="add-item" type="text" name="add-item" placeholder="Type + Enter" />
-            <button id="new">ADD</button>
+            <input class="add-item" type="text" name="add-item" placeholder="Type + Enter" />
+            -->
         </div>
     </div>
-    <footer class="clear"><button>clear list</button></footer>
+    <footer class="clear"><button>CLEAR LIST</button></footer>
 </body>
 
 </html>
 <!--comment
+            <button id="new">ADD</button>
 
 
 -->

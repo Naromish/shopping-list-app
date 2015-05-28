@@ -3,7 +3,7 @@ body {
     background-image: url ("images/coffee_beans.jpg");
 }
 
-img {
+.background {
     min-width: 120%;
     margin-left: -10%;
     z-index: -1;
@@ -28,7 +28,7 @@ img {
     margin-right: 5%;
 }
 
-#add-item {
+.add-item {
     background-color: white;
     border: none;
     border-radius: .5px;
@@ -38,16 +38,20 @@ img {
     list-style: none;
     line-height: 1em;
 }
+span {
+    margin: 0;
+}
 
-#new {}
-
-
-/*img.delete a:hover {
+.delete {
     float: right;
     margin-top: 3px;
-    display: none;
-    width: 10px;
-}*/
+    width: 20px;
+    height: 20px;
+    display:none;
+}
+.show {
+    display: inline;
+}
 
 li {
     font-size: 1.2em;
@@ -56,9 +60,7 @@ li {
     text-indent: .4em;
 }
 
-h1,
-h2,
-{
+h1,h2,li {
     color: rgb(88, 56, 41);
 }
 
@@ -118,12 +120,15 @@ footer {
     background-color: rgb(139, 115, 87);
 }
 
-.clear, .button {  
+.clear {  
      margin-bottom: 0px;
-     text-align: center;
-     font-size: 1.6em;
-
-
+     
 }
-
+.button {
+    text-align: center;
+     font-size: 1.6em;
+     border-radius: 4px;
+     background-color: white;
+     color: rgb(88, 56, 41);
+}
  
