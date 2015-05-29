@@ -58,6 +58,7 @@ li {
     list-style: none;
     line-height: 1em;
     text-indent: .4em;
+    cursor: pointer; cursor: hand;
 }
 
 h1,h2,li {
@@ -131,4 +132,3 @@ footer {
      background-color: white;
      color: rgb(88, 56, 41);
 }
- 

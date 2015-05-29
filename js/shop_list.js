@@ -46,3 +46,7 @@ $(document).mousedown(function(e) {
 //how do I create a functional button at bottom to clear list?
 //how do I style that button?
 
+//figure out how to clear list
+
+// Button
+//$('button').button();
