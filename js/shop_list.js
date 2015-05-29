@@ -3,20 +3,22 @@ $(document).ready(function() {
         $(this).toggleClass('strike');
         $(this).children().toggleClass();
     });
+//figure out to hide delete img so it doesn't enlarge when strike
 
     $('.add').on('click', '.delete', function(e){
             e.preventDefault(); 
             $(this).parent().remove();
     });
     $('.add').sortable({ axis: "y" });
+
+
+    //figure out how to clear list
+
+    $('.add').on ('click', '.gone', function() { 
+            $(this).parent().remove();
+    });
+
 });
-
-//figure out to hide delete img so it doesn't enlarge when strike
-
-    //don't think i need the below anymore;found different solution
-    //$('.add').on('hover', '.items', function() {
-     //   $('.delete').toggleClass('show');
-    //});
 
 
 $(document).keydown(function(e) {
@@ -28,7 +30,7 @@ $(document).keydown(function(e) {
 });
 
 
-//figure out why the delete button doesn't show consistently; something's off
+//figure out why the delete button jumps around; positioning is off
 
 $(document).mousedown(function(e) {
 
@@ -46,7 +48,12 @@ $(document).mousedown(function(e) {
 //how do I create a functional button at bottom to clear list?
 //how do I style that button?
 
-//figure out how to clear list
 
 // Button
 //$('button').button();
+
+    //don't think i need the below anymore;found different solution
+    //$('.add').on('hover', '.items', function() {
+     //   $('.delete').toggleClass('show');
+    //});
+
