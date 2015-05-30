@@ -12,7 +12,7 @@ $(document).ready(function() {
     $('.add').sortable({ axis: "y" });
 
 
-    //figure out how to clear list
+    //figure out how to clear list and style the button with bootstrap
 
     $('.add').on ('click', '.gone', function() { 
             $(this).parent().remove();
@@ -27,7 +27,20 @@ $(document).keydown(function(e) {
         $(".add").append("<li>" + text + "<img class='delete' src='images/circle_x.png'></li>");
        $(".add-item").val('');
     }
+
+//how to create multiple inputs/categories; different divs?
+
+       // var titles = [list-item];            
+        //$('input[name^=list-item]').each(function(){
+        //    titles.push
+        //    $(this).val();
+       // }
+
+
 });
+
+
+
 
 
 //figure out why the delete button jumps around; positioning is off
@@ -43,10 +56,7 @@ $(document).mousedown(function(e) {
 });
 
 
-//how to create multiple inputs/categories; different divs?
 
-//how do I create a functional button at bottom to clear list?
-//how do I style that button?
 
 
 // Button
