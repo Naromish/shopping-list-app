@@ -11,10 +11,8 @@ $(document).ready(function() {
     $('.add').sortable({ axis: "y" });
 
 
-    //figure out how to clear list and style the button with bootstrap
-
-    $('.add').on ('click', '.gone', function() { 
-            $(this).parent().remove();
+    $('.gone').click (function() { 
+            $('.items').remove();
     });
 
 });
@@ -23,7 +21,7 @@ $(document).ready(function() {
 $(document).keydown(function(e) {
     if (e.keyCode == 13) {
          var text = $(".add-item").val();
-        $(".add").append("<li>" + text + "<img class='delete' src='images/circle_x.png'></li>");
+        $(".add").append("<li class='items'>" + text + "<img class='delete' src='images/circle_x.png'></li>");
        $(".add-item").val('');
     }
 
