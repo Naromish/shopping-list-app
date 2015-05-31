@@ -52,7 +52,9 @@ span {
 .show {
     display: inline;
 }
-
+.hide {
+    display: none;
+}
 li {
     font-size: 1.2em;
     list-style: none;

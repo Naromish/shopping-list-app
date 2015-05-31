@@ -1,9 +1,8 @@
 $(document).ready(function() {
     $('.add').on('dblclick', 'li', function() {
         $(this).toggleClass('strike');
-        $(this).children().toggleClass();
+        $(this).children('strike').toggleClass('hide');
     });
-//figure out to hide delete img so it doesn't enlarge when strike
 
     $('.add').on('click', '.delete', function(e){
             e.preventDefault(); 
